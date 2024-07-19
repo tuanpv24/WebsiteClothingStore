@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: auto;
+  padding: 10px;
+  margin-left: 250px;
+  overflow: hidden;
+  color: #869099;
+}
+
+.toggle-footer {
+  margin-left: 75px;
+  transition: margin-left 0.3s ease-in-out, margin-right 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 950px) {
+  footer {
+    margin-left: 0;
+  }
+}

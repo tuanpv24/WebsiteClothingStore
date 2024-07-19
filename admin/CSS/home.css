@@ -1,0 +1,184 @@
+.wrapper {
+  margin-left: 250px;
+  padding: 0px 10px;
+}
+
+.toggle-wrapper {
+  margin-left: 75px;
+  transition: margin-left 0.3s ease-in-out, margin-right 0.3s ease-in-out;
+}
+
+.wrapper h1 {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.admin {
+  margin-top: 100px;
+  padding: 0px 10px;
+}
+
+.row-box {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+.small-box {
+  display: block;
+  position: relative;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  width: 25%;
+  height: 150px;
+  margin: 0px 10px;
+}
+
+.inner {
+  padding: 15px;
+  position: relative;
+}
+
+.small-box:nth-child(1) {
+  background-color: #17a2b8;
+}
+
+.small-box:nth-child(2) {
+  background-color: #28a745;
+}
+
+.small-box:nth-child(3) {
+  background-color: #ffc107;
+}
+
+.small-box:nth-child(4) {
+  background-color: #dc3545;
+}
+
+.inner h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.inner p {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.15);
+}
+
+.view {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 35px 0px;
+}
+
+.view-all {
+  padding: 0px 15px;
+}
+
+.table {
+  padding: 0px 15px;
+}
+
+table {
+  margin: 20px 0px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table img {
+  width: 180px;
+  height: 150px;
+  object-fit: cover;
+}
+
+table tr {
+  height: 50px;
+}
+
+table tr td {
+  padding: 10px;
+}
+
+table tr td a {
+  text-decoration: none;
+  color: #000;
+  margin: 0px 10px;
+}
+
+/* .edit-delete {
+  max-width: 150px;
+  margin-left: auto;
+} */
+
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(231, 231, 0);
+  margin: 10px 0px;
+  height: 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.edit:hover {
+  background-color: #fff;
+  border: 1px solid rgb(231, 231, 0);
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 72, 0);
+  color: #fff;
+  margin: 10px 0px;
+  height: 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.delete:hover {
+  background-color: #fff;
+  color: rgb(255, 72, 0);
+  border: 1px solid rgb(255, 72, 0);
+}
+
+@media screen and (max-width: 1050px) {
+  .table {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  table {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    margin-left: 0;
+  }
+
+  .row-box {
+    flex-wrap: wrap;
+  }
+
+  .small-box {
+    display: block;
+    margin-bottom: 20px;
+    width: 47.5%;
+  }
+}
